@@ -20,13 +20,13 @@ public class Army : MonoBehaviour {
     }
 
     void AddUnits(UnitType unit) {
-      for(int i=0; i<unit.count; i++) {
-        float pos = unit.pos.x + (5*i);
-        GameObject u =
-            Instantiate(unit.type,
-            new Vector3(pos, 0, unit.pos.z),
-            Quaternion.identity) as GameObject;
-      }
+        for(int i=0; i<unit.count; i++) {
+            float pos = unit.pos.x + (5*i);
+            GameObject u =
+                Instantiate(unit.type,
+                new Vector3(pos, 0, unit.pos.z),
+                Quaternion.identity) as GameObject;
+        }
 
     }
 }
